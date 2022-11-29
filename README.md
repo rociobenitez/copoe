@@ -1,19 +1,13 @@
 # COPOE
 
-COPOE (Círculo Oficial de Podólogos de España) es una web de membresía. Se trata de un proyecto ficticio con el que se pretende practicar el desarrollo FullStack, utilizando PHP.
+COPOE (Círculo Oficial de Podólogos de España) es una web de membresía. <br>
+Se trata de un proyecto ficticio con el que se pretende mejorar las habilidades de desarrollo FullStack.
 
 
 
-## 📝 Notas:
-Para simular un usuario registrado, se puede acceder al área privada con los siguientes datos:
-````
-user: rociobenitez
-pass: 123
-````
-Para acceder al panel de administración (a través de la url #) introduzca los siguientes datos:
-````
-user: administrador2022
-pass: 123
-````
+### 📝 Notas:
+Se hizo uso de la BBDD durante un tiempo limitado.
+
+Para conocer más detalles del proyecto, pueder ver mi archivo de [Figma](https://www.figma.com/file/SFo1bYzA86sLS3EclhWZlJ/COPOE---Design-System?node-id=2002%3A4118&t=ZMf8Pct1vbS0SYN5-1) 
 
 #
