@@ -1,0 +1,599 @@
+/*  ------ TIPOGRAFÍA - FUENTES ------ */
+
+@font-face {
+  font-family: 'titulo';
+  src: local('poppins-semibold'), url(/fonts/poppins-semibold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'texto';
+  src: local('poppins-regular'), url(/fonts/poppins-regular.woff);
+}
+
+/* ------ PALETA DE COLORES ------ */
+
+:root {
+  --negro: #3B3E51;
+  --azuloscuro: #2C3E50;
+  --turquesa: #33CCCC;
+  --blanco: #FFFFFF;
+  --grisclaro: #ECF0F1;
+  --grisoscuro: #4E5F6B;
+}
+
+/* ------ GENERAL ------ */
+
+* {
+  font-family: texto, sans-serif; 
+}
+
+html{
+  scroll-behavior: smooth;  
+}
+
+body{
+  position: relative;    
+  padding-bottom: 90px;   
+  min-height: 100vh;      
+}
+
+h1 {
+  font-family: titulo, sans-serif;
+  font-size: 3.3em;
+  color: var(--negro);
+}
+
+h2 {
+  font-family: titulo, sans-serif;
+  font-size: 2.5em;
+  color: var(--negro);
+}
+
+h3{
+  font-family: titulo, sans-serif;
+  font-size: 2em;
+  color: var(--azuloscuro);
+}
+
+h4{
+  font-family: titulo, sans-serif;
+  font-size: 1.6em;
+  color: var(--azuloscuro);
+}
+
+h5{
+  font-family: titulo, sans-serif;
+  font-size: 1.2em;
+  color: var(--azuloscuro);
+}
+
+h6 {
+  font-family: titulo, sans-serif;
+  font-size: 1em;
+  color: var(--turquesa); 
+}
+
+p,a {
+  font-family: texto, sans-serif;
+  font-size: 1em;
+  color: var(--grisoscuro);
+  text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;  
+}
+
+p.fw-bold{
+  color: var(--negro);
+}
+
+a.link-contact{
+  color: var(--blanco);
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+a.nav-link {
+  font-weight: 800;
+}
+
+a.nav-link:hover{
+  color: var(--turquesa);
+}
+
+p.enfasis{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+p.negro{
+  color: var(--negro);
+}
+
+em{
+  color: var(--turquesa);
+}
+
+small{
+  font-family: texto, sans-serif;
+  font-size: 0.7em;
+}
+
+a.turquesa, p.turquesa{
+  color: var(--turquesa);
+}
+
+.azuloscuro{
+  color: var(--azuloscuro);
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+section div h1.cabecera{
+  /*padding-top: 100px;*/
+}
+
+/* ------ BOTONES ------ */
+
+.btn {
+  font-family: titulo, sans-serif;
+}
+
+.btn-s {
+  padding: 6px 24px;     
+  border-radius: 24px;
+  font-size: 0.9em;
+}
+
+.btn-m {
+  padding: 8px 36px;    
+  border-radius: 24px;
+}
+
+/* botón 1: botón turquesa con letras blancas */
+.btn-1 {
+  color: var(--blanco);
+  background-color: var(--turquesa);
+  transition: 0.3s ease;
+}
+
+.btn-1:hover{
+  color: var(--blanco);
+  background-color: var(--azuloscuro);
+}
+
+/* botón 2: botón fondo transparente, letras blandas y borde blanco */
+.btn-2 {
+  color: var(--blanco);
+  background-color: transparent;
+  border: 2px solid var(--blanco);
+  transition: 0.3s ease;
+}
+
+.btn-2:hover{
+  color: var(--turquesa);
+  background-color: var(--blanco); 
+}
+
+/* botón 3: botón azul oscuro con letras blancas */
+.btn-3 {
+  color: var(--blanco);
+  background-color: var(--azuloscuro);
+  transition: 0.3s ease;
+}
+
+.btn-3:hover{
+  color: var(--azuloscuro);
+  background-color: var(--turquesa);  
+}
+
+/* botón 4: botón blanco con borde gris */
+.btn-4{
+  background-color: var(--blanco);
+  border: 1px solid var(--grisclaro);
+  color: var(--azuloscuro);
+  transition: 0.3s ease;
+}
+
+.btn-4:hover{
+  background-color: var(--azuloscuro);
+  border: 1px solid var(--azuloscuro);
+  color: var(--blanco);
+}
+
+/* botón 5: botón blanco con borde turquesa */
+.btn-5{
+  background-color: var(--blanco);
+  border: 2px solid var(--turquesa);
+  color: var(--turquesa);
+  transition: 0.3s ease;
+}
+
+.btn-5:hover{
+  background-color: var(--azuloscuro);
+  border: 2px solid var(--azuloscuro);
+  color: var(--blanco);
+}
+
+.btnCurso{
+  color: var(--turquesa);
+  font-size: 0.9em;
+}
+
+.page-item:hover a{
+  color: var(--azuloscuro);
+}
+
+/* ------ PAGINACIÓN ------ */
+ul.pagination li.active a.page-link{
+  background-color: var(--turquesa);
+  border-color: var(--grisclaro);
+};
+
+/* ------ MENÚ PRINCIPAL ------ */
+
+/* --- Main Header --- */
+header#navbarPrimary ul li.nav-item a.active{
+  color: var(--turquesa);
+}
+
+/* --- Secondary Header --- */
+header#navbarSecondary ul li a.nav-link{
+  color: var(--azuloscuro);
+}
+header#navbarSecondary ul li.nav-item a.active{
+  color: var(--turquesa);
+}
+header#navbarSecondary ul li a.nav-link:hover{
+  color: var(--turquesa);
+}
+
+/* --- Header Área Asociados --- */
+ul#navCuenta li a.nav-link{
+  color: var(--azuloscuro);
+}
+ul#navCuenta li a.nav-link:hover{
+  color: var(--turquesa);
+}
+ul#navCuenta li a.active{
+  background-color: var(--turquesa);
+  color: var(--blanco);
+  border-radius: 12px 12px 0 0;
+}
+
+/* --- Admin --- */
+ul.show li a.active {
+  background-color: var(--blanco);
+}
+
+/* --- Header Scroll --- */
+header.down{
+  background-color: var(--blanco);
+  transition: 0.7s;
+}
+header.down ul li a.nav-link{
+  color: var(--azuloscuro); 
+}
+header.down ul li a.nav-link:hover{
+  color: var(--turquesa); 
+}
+
+header#navbarPrimary.down ul li a.nav-link{
+  color: var(--azuloscuro);
+}
+header#navbarPrimary.down ul li.nav-item a.active{
+  color: var(--turquesa);
+}
+header#navbarPrimary.down ul li a.nav-link:hover{
+  color: var(--turquesa);
+}
+header#navbarSecondary.down ul li.nav-item a.active{
+  color: var(--turquesa);
+}
+
+/* ------ CARRITO ------ */
+
+#carrito{
+  z-index: 100;
+  position: relative;
+  background-color: white !important;
+  border: 2px solid var(--turquesa);
+}
+
+#tablaCarrito thead{
+  height: 50px;
+}
+
+#tablaCarrito thead tr th{
+  font-size: 0.9em;
+}
+
+/* ------ MENÚ SECUNDARIO ------ */
+
+.nav-item-single a{
+  color: var(--turquesa) !important;
+}
+
+/* ------ FOOTER ------ Colocado siempre abajo */
+
+footer{
+  background-color: var(--azuloscuro);
+  position: absolute;                   
+  bottom: 0;
+}
+
+/* Cambia el color de los iconos del footer al pasar el ratón por encima: */
+ul.list-unstyled li a:hover{    
+ color: var(--turquesa);
+ transition: 0.4s ease;
+}
+
+/* ------ HOME ------ */
+
+section.cabecera{
+  width: 100%;
+  height: 740px; 
+}
+
+section#cabeceraHome{
+  background: url('../img/cabeceraHome.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+section#cabeceraCursos{
+  background: url('../img/cabeceraCursos.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+section#cabeceraVentajas{
+  background: url('../img/cabeceraVentajas.png') no-repeat center fixed;
+  background-size: cover;
+}
+
+section#cabeceraBlog{
+  background: url('../img/cabeceraBlog.png') no-repeat bottom fixed;
+  background-size: cover;
+}
+
+/* Las imagenes de la cabecera se consideran imágenes de fondo,
+por ello se añaden a través de CSS y no en el archivo html como <img> */
+
+#ventajas, #cuentas, #dudas {
+  background-color: var(--grisclaro);
+}
+
+.card{
+  border-radius: 0;
+  border-color: var(--grisclaro);
+}
+
+.cardCurso{
+  border: 0;
+}
+
+.cardCurso:hover .card-body{
+  background-color: var(--grisclaro) !important;
+  transition: 0.5s ease;
+}
+
+.cardCurso:hover .card-header{
+  background-color: var(--grisclaro) !important;
+  color: var(--grisoscuro);
+  transition: 0.5s ease;
+}
+
+#campoDudas{
+  grid-auto-columns: repeat(2, 1fr);
+}
+
+.icon-ventaja{
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.preguntaIcon{
+  color: var(--turquesa) !important;
+}
+
+/* ------ FORMULARIOS ------- */
+
+/* --- Contacto --- */
+#cajaContacto{
+  background: url('../img/teclado.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#floatingTextarea{
+  height: 100%;
+}
+
+/* --- Login e Inicio de sesión --- */
+
+input{
+  border-color: var(--grisclaro);
+}
+
+/* ------ SECCIONES ------- */
+
+#titleSection{
+  height: 300px;
+  margin: 0;
+}
+
+#titleSection h1{
+  margin-top: 80px;
+}
+
+.cursosIcon{
+  width: 120px;
+}
+
+#cajaImgVentajas{
+  height: 250px;
+  overflow: hidden;
+}
+
+.cardVentaja, .cardCursos{
+  border: 0px;
+}
+
+
+/* -- CURSOS -- */
+
+#bannerPremium{
+  background: url('../img/fondo.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 350px; 
+}
+
+.cardProximos{
+  border: 0;
+}
+
+.card-img-top{
+  height: 220px;
+  /*width: 100%;*/
+  border-radius: 0;
+  object-fit: cover;
+}
+
+/* ------ TIENDA ------ */
+
+#listaProductos{
+  z-index: 0;
+}
+.imgProducto{
+  object-fit: cover !important;
+  height: 120px;
+  width: 180px;
+}
+
+#cuerpoTablaComprar tr td img{
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
+
+/* ------ ADMIN ------ */
+
+main.admin{
+  padding-bottom: 0px;
+}
+
+body.loginAdmin {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--grisclaro);
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#logoAdmin {
+  width: 50px;
+  height: 50px;
+}
+
+.tableAdmin thead{
+  background-color: var(--azuloscuro);
+  color: var(--blanco);
+}
+
+.imgAdmin{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+div.boxAdmin:hover{
+  opacity: 0.8;
+  transition: 0.4s ease;
+  height: 100px;
+}
+
+#imgEditarAdmin{
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#imgIconoAdmin{
+  width: 120px;
+  object-fit: cover;
+}
+
+#tablaAsociados{
+  width: 400px !important;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Dispositivos pequeños (móvil) */
+@media (min-width: 576px) {
+
+}
+
+/* Dispositivos medianos (tablets) */
+@media(min-width:768px){
+  #campoProductos{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Dispositivos grandes - Escritorios */
+@media (min-width: 992px) {
+  #campoProductos{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Dsipositivos extra grandes - Pantallas grandes */
+@media (min-width: 1200px) {
+  #campoProductos{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+
+
+
+
+

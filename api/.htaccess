@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+# Especificar la Url de Destino y almacenar las variables:
+# RewriteRule expresionRegular UrlDestino[banceras]
+RewriteRule ^([a-zA-Z0-9]*)$ leerDatos.php?variable=$1
